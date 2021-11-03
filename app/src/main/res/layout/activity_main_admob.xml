@@ -1,0 +1,26 @@
+<!--suppress ALL -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="jp.osaka.appppy.card.app.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="jp.osaka.appppy.card.app.MainActivity"
+        tools:ignore="MergeRootFrame" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/AdMob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        class="jp.osaka.appppy.card.admob.AdMobFragmentImpl"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
